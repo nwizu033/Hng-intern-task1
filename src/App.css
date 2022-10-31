@@ -1,38 +1,203 @@
-.App {
-  text-align: center;
+body,#root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 2rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-section{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-top: 3rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#share{
+  margin-left: 40rem;
+  height: 30px;
+  width: 30px;
+  background-image: url("./_Avatar_share_button.png");
+  background-size: contain;
+ 
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#share:hover{
+  height: 30px;
+  width: 33px;
+  cursor: pointer;
+  background-image: linear-gradient(rgba(218, 212, 212, 0.754),rgba(217, 212, 212, 0.75)), url("./_Avatar_share_button.png");
+  border-radius: 50%;
+}
+
+#menu_icon{
+  display: none;
+}
+
+#profile__img{
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+#slack{
+  display: none;
+}
+
+#twitter{
+font-weight: 800;
+}
+
+.link-section{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.link-section a{
+
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 1rem;
+  background: #EAECF0;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  text-align: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.social-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+#slack_icon{
+  background-image: url("./slack.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 22px;
+}
+
+#slack_icon:hover{
+  cursor: pointer;
+}
+
+#github_icon{
+  background-image: url("./Icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 22px;
+}
+
+#github_icon:hover{
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid #EAECF0;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+ 
+}
+
+#zuri{
+  font-weight: 700;
+  line-height: 2.5;
+}
+#zuri span{
+  color: red;
+  font-size: 1.5rem;
+}
+
+#frontend{
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+#logo{
+  background-image: url("./I4G.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30px;
+  width: 132px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  body,#root{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem 1rem;
+  
   }
-  to {
-    transform: rotate(360deg);
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+
+  .profile-section{
+    padding-top: 1rem;
+    
+    }
+
+  #share{
+    display: none;
+   
+  }
+
+  #menu_icon{
+    margin-left: 25rem;
+    margin-bottom: 0;
+    color: rgb(126, 124, 122);
+    font-size: 10px;
+    border: 0.8px dotted rgb(126, 124, 122);
+    border-radius: 50%;
+    padding: 0.5rem;
+    line-height: 2;
+    display: inline-block;
+    transform: scale(1.8,1.5);
+    transform-origin: 0 0;
+  }
+
+}
+
+@media screen and (max-width: 460px) {
+  #menu_icon{
+    margin-left: 20rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #menu_icon{
+    margin-left: 17rem;
   }
 }
