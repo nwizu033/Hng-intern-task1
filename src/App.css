@@ -139,7 +139,72 @@ footer{
   width: 132px;
 }
 
+.form_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  font-size: 18px;
 
+}
+
+.form{
+  width: 60%;
+}
+.form div{
+  margin: 0.5rem 0;
+  box-sizing: border-box;
+}
+.names_input{
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.names_input div{
+  width: 50%;
+}
+
+input{
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+width: 2.5%;
+}
+
+.agree_input{
+  display: flex;
+  gap: 10px;
+}
+
+.form button{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #1570EF;
+  box-sizing: border-box;
+  border: transparent;
+  margin-bottom: 5rem;
+  color: #EAECF0;
+  font-weight: 600;
+}
+
+textarea {
+width: 100%;
+overflow: auto;
+resize: none;
+padding-bottom: 2rem;
+padding-top: 0.5rem;
+padding-left: 0.5rem;
+padding-right: 3rem;
+margin-top: 0.5rem;
+box-sizing: border-box;
+}
 
 
 
@@ -201,3 +266,4 @@ footer{
     margin-left: 17rem;
   }
 }
+
