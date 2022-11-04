@@ -23,7 +23,7 @@ function Contact() {
             </div>
             <div>
                  <label>Message</label>
-                 <textarea id='message' placeholder='Send me a message and I will reply you as soon as possible...'/>
+                 <textarea id='message' placeholder="Send me a message and I'll reply you as soon as possible..."/>
             </div>
         
             <div className='agree_input'>
